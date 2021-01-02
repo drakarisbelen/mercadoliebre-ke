@@ -1,0 +1,126 @@
+*
+{
+    box-sizing: border-box; /*incluye relleno y borde este incluido en el ancho y borde de la caja*/
+}
+
+
+
+body{
+    font-style:  'Roboto', sans-serif;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding:20px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.copy-header{
+    font-weight: 400;
+    align-items: center;
+}
+
+.hamburguer-button{
+    background-color: #03264C;
+    color:white;
+    display: block;
+    max-width: 40px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto; /*me lo centra porque esta en el display block*/
+}
+
+.main-navbar{
+display:none; /*oculto la barra de nav. para que no muestre en version mobile*/
+}
+
+.main-navbar ul
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.main-navbar a
+{
+    text-decoration: none;
+    color:black;
+    display: inline-block; /* las etiquetas "a" son elemenos de linea para este caso lo deshabilito */
+    padding:5px;
+    font-size: 17px;
+                
+}
+
+@media (min-width:768px){
+
+    .main-header-top-bar{
+        display: flex; /*trabajo sobre el contenedor*/
+        justify-content: space-between; /*espacio sobre el elementos del contenedor debe ser homogeneo*/       
+    }
+    .copy-header{
+        width:350px;
+        text-align: right;
+    }
+    .hamburguer-button{
+        display:none;
+    }
+    .main-navbar{
+        display: flex;
+        /*border: dotted 2px red;*/
+        justify-content: space-between;
+    }
+
+    /*a la lista del navbar le doy la propiedad flex para poder posicionar una elemento al lado del otro*/
+    .main-navbar ul{
+        display: flex;
+    }
+    
+    
+    .main-navbar li{
+        margin: 0 5px;
+    }
+}
+
+/* para que al agrandar los contenedores de flexbox
+tengan un limite y no queden tan separaditos */
+@media(min-width:1200px){
+    .logo{
+        width: 250px;
+    }
+    
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        /*border: olive solid 2px;*/
+        margin:auto;  /*con esto centro ambos elementos*/
+    }
+
+    .main-header-top-bar{
+        align-items: center; 
+        /*border: red solid 2px;*/
+    }
+    
+    .copy-header{
+        margin: 0;
+        max-width: none; /*no tiene limite el testo "compra en ctas y sin tarj-"*/
+        font-size: 18px;
+        font-weight: 400;
+        /*border: red solid 2px;*/
+        text-align: center;
+        }
+   
+    .main-navbar{
+        margin-top: 30px;
+    }
+    .main-navbar li{
+        margin:0 5px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    
+}

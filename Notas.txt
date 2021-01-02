@@ -1,0 +1,30 @@
+Notas del mercadoliebre:
+1) Declarar la variable public con la ruta para las imagenes del proyecto
+2) Dentro del package.json modificar el nombre del programa de index.js por app.js ya que asi se llama en mi proyecto
+3) todo lo que diga *{} en el css va a tener más peso que lo que sigue
+4) Preparar styles.css
+	    normalize.css //busco de la web y copio
+	    fuente de google // añadir en el Head del html
+	    iconos añadir la ruta del kit en el head del html
+
+5) Voy probando de versión mobile con el inspector de código en las medidas: 360 x 640
+
+6) Como referenciar un vinculo muerto siempre con href  = "#"
+<li><a href="#"> Ofertas</a></li>
+
+7) Si voy a definir un estilo para mas de una clase en css puedo hacerlo con .clase1, .clase2
+.left-navbar, .right-navbar
+{
+    list-style: none;
+    
+}
+
+8) Tablet: 768 x 640
+Esta media query se empieza a implementar a partir de los 768pixeles
+@media min-width: 768px
+
+
+9) Pantalla de escritorio: 1200 x 640 
+
+
+
