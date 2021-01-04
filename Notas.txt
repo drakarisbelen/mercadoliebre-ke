@@ -90,7 +90,7 @@ y seleccion "Connect" y dice "GitHub Connected"
 Habilitar para esto:  Enable automatic deploys  (pudo desactivarlo)
 
 9) para avisarle que estamos usando NODE ir a menu:
-setting: Add buildpack 
+setting: Add buildpack   
 
 10) ir al boton setting
 - Deploy
