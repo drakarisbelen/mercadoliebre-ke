@@ -27,4 +27,8 @@ Esta media query se empieza a implementar a partir de los 768pixeles
 9) Pantalla de escritorio: 1200 x 640 
 
 
+10) Imagen hero en diseño adaptativo
+<div class="hero-container">
+                <img class="home-banner" src="/img/home-hero-banner.jpg" alt="">
+            </div>
 

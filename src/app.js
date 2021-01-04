@@ -14,6 +14,12 @@ app.listen(3000,() =>{
 });
 
 
-
+//HOME
 app.get("/", (req, res)=> res.sendFile(path.join(__dirname, "./views/home.html")));
+
+//REGISTRARSE
+app.get("/register", (req, res)=> res.sendFile(path.join(__dirname, "./views/register.html")));
+
+//LOGUEARSE
+app.get("/login", (req, res)=> res.sendFile(path.join(__dirname, "./views/login.html")));
 

@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/1e90c6fbb0.js" crossorigin="anonymous"></script>
 
-    <title>MercadoLiebre</title>
-
+    <title>Registrarse</title>
 </head>
+
 <body>
     <header class="main-header">
         <div class="main-header-top-bar">
             <img  src="/img/logo-mercado-liebre.svg" alt="" class="logo" >
             <div class="buscar">
-                <input class= "input-buscar" type="text" placeholder="Buscar productos, marcas" > <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar productos, marcas" > <i class="fas fa-search"></i>
             </div>
             <h2 class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i>
@@ -36,8 +36,8 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="right-navbar">
-                <li><a href="http://localhost:3000/login">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
-                <li><a href="http://localhost:3000/register">Ingresá <i class="fas fa-arrow-right"></i></a></li>
+                <li><a href="#">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
+                <li><a href="#">Ingresá <i class="fas fa-arrow-right"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
@@ -45,50 +45,45 @@
             <img src="/img/img-home-banner.jpg" alt ="" class="img-hero">
         </div>
     </header>
-    <main>
-        <section class="contenedor-article">    
-            <h1 class="h1-art">Basado en tu última visita</h1>
-            <div class="articulos">
-                <article>
-                    <img src="/img/img-cafetera-moulinex.jpg" alt="">
-                    <div class="div-art">
-                        <i id="truck" class="fas fa-truck"></i>
-                        <p class="precio">$6770</p> 
-                        <p class="descuento">40% off</p>
-                        <h4 class="descripcion">Cafetera Moulinex</h4>
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/img-macbook-pro-2019.jpg" alt="">
-                    <div class="div-art">                
-                        <i id="truck" class="fas fa-truck"></i>
-                        <p class="precio">$230.000</p> 
-                        <p class="descuento">20% off</p>
-                        <h4 class="descripcion">MacBook Pro 2019</h4>
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/img-samsung-galaxy-s10.jpg" alt="">
-                    <div class="div-art">
-                        <i id="truck" class="fas fa-truck"></i>
-                        <p class="precio">$70.500</p> 
-                        <p class="descuento">  10% off</p>
-                        <h4 class="descripcion">Teléfono Samsung</h4>
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/img-tv-samsung-smart.jpg" alt="">
-                    <div class="div-art">               
-                        <i id="truck" class="fas fa-truck"></i>
-                        <p class="precio">$23.200</p> 
-                        <p class="descuento"> 5% off</p>
-                        <h4 class="descripcion">Samsung 43'</h4>
-                    </div>
-                </article>
-        </div>
-        </section>
+
+    <main class="main-register">
+    <div class="contenedor-register">
+        <form action="POST">
+            <label for="name">Nombre y Apellido: <input class="input-register" type="text" name="name"></label>
+            <label for="user">Nombre Usuario: <input class="input-register" type="text" name="user"></label>
+            <label for="birthday">Fecha de nacimiento:<input class="input-register" type="date" name="birthday"></label>
+            <label for="direction">Domicilio:<input class="input-register" type="text" name="direction"></label>
+            <div class ="user-type">
+                <h5>Tipo de Usuario</h5>
+                <label>
+                    <input type="checkbox" class="check-user" name="user-type" id="user-type" value="seller">Vendedor  
+                </label>
+                <label>
+                    <input type="checkbox" class="check-user" name="user-type" id="user-type" value="buyer">Comprador
+                </label>
+            </div>
+       
+            <div class="checkbox-classes">
+                <h5>Categorías de interes</h5>
+                <label><input id ="check-category" type = "checkbox" name="cat-electro" value="electro">Electro</label>
+                <label><input id ="check-category" type = "checkbox" name="cat-moda" value="moda">Moda</label>
+                <label><input id ="check-category" type = "checkbox" name="cat-hogar" value="hogar">Hogar</label>
+                <label><input id ="check-category" type = "checkbox" name="cat-jugueteria" value="jugueteria">Jugueteria</label>
+                <label><input id ="check-category" type = "checkbox" name="cat-vidasana" value="vidasana">Vida Sana</label>
+            </div>
+            <label for="photo">Foto de usuario: <button type ="submit" name="photo" >Seleccionar Archivo</button></label>
+            <label for="pass">Contraseña: <input class="input-register" type = "password" name="pass" ></label>
+            <label for="pass-confirm">Confirmar Contraseña: <input class="input-register" type = "password" name="pass-confirm" ></label>
+            <div class="button-register">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
+
     </main>
 
+    
     <footer>
         <div class ="footer-container">
             <div class="footer-box">
@@ -107,12 +102,8 @@
                 <p class="footer-obs">¿No te gusta? ¡Devolvelo! en Mercadoliebre no hay nada que no puedas <br> hacer porque estás siempre protegid@</p>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
     </footer>
+    
 </body>
 </html>
