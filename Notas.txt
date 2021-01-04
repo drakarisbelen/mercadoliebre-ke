@@ -32,3 +32,79 @@ Esta media query se empieza a implementar a partir de los 768pixeles
                 <img class="home-banner" src="/img/home-hero-banner.jpg" alt="">
             </div>
 
+
+
+.hero-container{
+    background-color: lightgray ;
+}
+
+.home-banner {
+    width: 96%;
+    margin: 2%;
+}
+
+
+.aligner-container{
+    border: black solid .2rem;
+    margin: 0 auto;
+}
+
+
+
+MI IMAGEN
+<div class="hero-container">
+            <img src="/img/img-home-banner.jpg" alt ="" class="img-hero">
+        </div>
+
+
+
+-----------------------------------------------------------------------------------------
+HEROKU:
+-----------------------------------------------------------------------------------------
+
+1)si ni lo encuentra va al 3000
+app.listen(process.env.PORT || 3000)
+
+2)crear archivo en la raiz de proyecto Procfile
+
+3)Defino el entry point ./src/app.js
+
+4) dentro del Procfile:
+web: node app.js
+
+5) en la terminal:
+git add app.js
+git add Procfile
+git commit -m "Agrego procfile y puerto"
+git push origin master  o puede ser git push origin main
+
+6)Ir a Heroku
+crear una nueva app, poner el nombre este nombre va a aparecer en la url
+region dejar EEUU
+
+7) Linkear con github si busco en "search" puedo buscar el  repo que quiero linkear
+y seleccion "Connect" y dice "GitHub Connected"
+
+8) cada vez que hagamos un push que la pagina se actualice automáticamente
+
+Habilitar para esto:  Enable automatic deploys  (pudo desactivarlo)
+
+9) para avisarle que estamos usando NODE ir a menu:
+setting: Add buildpack 
+
+10) ir al boton setting
+- Deploy
+- Deploy brunch (por primera vez fuerzo el deploy de la app)
+
+11) voy al boton VIEW y puedo ver mi proyecto :)
+
+
+
+
+
+
+
+
+
+
+
