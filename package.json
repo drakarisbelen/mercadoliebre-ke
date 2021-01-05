@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/drakarisbelen/mercadoliebre-ke/issues"
   },
-  "homepage": "https://github.com/drakarisbelen/mercadoliebre-ke#readme"
+  "homepage": "https://github.com/drakarisbelen/mercadoliebre-ke#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
